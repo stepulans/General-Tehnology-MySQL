@@ -69,6 +69,11 @@ SELECT
 	*
 FROM students
 WHERE firstname LIKE 'И%';
+
+SELECT
+	*
+FROM students
+WHERE avg_mark IN (2.2, 3.1, 4.7)
 -- 7
 CREATE VIEW v_students_m AS
 SELECT
