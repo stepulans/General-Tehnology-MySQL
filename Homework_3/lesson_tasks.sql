@@ -87,18 +87,21 @@ SELECT
 FROM students
 WHERE gender = 'F';
 -- 9
+SELECT DISTINCT avg_mark
+FROM students;
+-- 10
 ALTER TABLE students MODIFY COLUMN avg_mark INTEGER;
 ALTER TABLE students
 DROP CONSTRAINT students_chk_1;
 
 UPDATE students
 SET avg_mark = avg_mark * 10;
--- 10
+-- 11
 UPDATE students
 SET lastname = 'Сидоров'
 WHERE firstname = 'Олег' AND lastname = 'Петров';
 
--- 11
+-- 12
 UPDATE students
 SET avg_mark = avg_mark + 10
 WHERE avg_mark <= 31;
